@@ -1,0 +1,244 @@
+<!--
+Kısayollar
+1)ALT+SHİFT+F = Kodları Düzenlemek
+2)CTRL+ALT+ aşağı yukarı ok = imleci aşağı yukarı büyütür
+3)ALT+Yukarı ok tuşları = Satırı kaydırmak için
+4)Yazıyı seçip CTRL+D  aynı diğer yazıları da seçiyor daha sonra değiştirme ve ekleme yapabilmek için
+5)CTRL+SHİFT+K = Satır Silmek
+6)CTRL+ENTER = Yeni satır eklemek
+
+-->
+<!--
+Header elementleri-->
+<!--<h1>Zeynep</h1>   en büyükten en küçüğe sıralanır yazı tipi
+<h2>Zeynep</h2>
+<h3>Zeynep</h3>
+<h4>Zeynep</h4>
+<h5>Zeynep</h5>
+<h6>Zeynep</h6> -->
+
+<!--
+<hr> çizgi koymak için
+<br> break yani kırmak (boşluk koymaya yarar.)
+<strong> kalın yapar.
+<b> kalın yapar strongla aynı.    
+<i> İtalik yapar.
+<mark> fosforlu yapar.    
+src(source) : kaynak--resim için    
+center : resmi veya yazıyı ortalamak için kullanılır.
+a : link vermek-- href :tıklanabilir link için
+ol(ordinary list), ul(unordinarylist) li tagları içine yaz
+td : (table data)  satıra data girmek için kutucuk 
+table border: çerçeve kenarlık diyebliriz.
+th : tablo başlığı.(table header).
+tr : tablo satırı koymak için (table row).
+rowspan : satırları birleştirmek için
+colspan : sütunları birleştirmek için kullanılır.
+inline(yan yana yazılması) ve block(yeni satıra başlar)
+span element(kullanıldığı akdar alan kaplayan element) : yazının yanına ekleme
+div elementi: web sitesininn ana iskeletini oluşturmaya yarar.
+ 
+. : class # : id bunlar csslerde
+
+FORM KULLANIMI 
+placeholder : kullanımı hepsinde olabilir içinde gösterir.
+<input type="text"
+<input type="password"
+<input type="email"
+<input type="checkbox" seçenekli işlemler, id  : benzersiz birbirinden ayırmak için
+<input type="radio"
+<input type="file"
+<input type="reset"
+<input type="submit" gönder formun actionunu tetikler.
+texttarea içerik kutucuğu için
+select option 
+radio button birini seçebilmek
+
+CSS ÖZELLİKLERİ
+style etiketini head içinde açarsak tüm yazıları(h1 için düşün) aynı yapar(renk özellik.)
+body içinde bireysel değişim yapar.
+class özelliği için . koymak gereklidir.{} kullanılır ve özelliklerinini kullanmak istediğimiz etikette (<h2 class="özellik ismiyle">) belirtilir.
+id # ile kullanılır. Benzersiz olması lazım ilerisi için bir etikette kullan class birden fazla kullanabilirsin.
+    // css yorum satırıdır.
+<div> kutucuk halidir csslerde de vardır. blok elementtir.    
+-->
+
+CSS
+------------------
+Css i 3 farklı şekilde dahil edebiliyoruz
+1- etiket kullanarak 
+2-style etiketleri ile
+3-harici bir css dosyası ile
+
+Style ile tanımladığımzıda sadece styleın olduğu etikette geçerli olur.
+Eğer toplu css dahil etmek istiyorsak head kısmına style ekliyoruz
+Harici bir dosya ekleyeceksek dosyanın uzantısı css olmak zorunda
+ctrl+ö yorum satırı yapar
+Mesela 3 h1den sadece bir tanesinin rengini değiştitrmek istiyorsak class yapabiliriz
+"." ile class yaparız.(.melisa{} gibi)
+classta da hangi özellikleri istiyorsak yazıyruz ve hangisi bundan etkilenecekse
+ona bu classı tanımlıyoruz mesela h2 class="classİsmi" /h2
+
+id kullanarak css özelliği tanımlamak istiyorsak "#" işareti kullanırız
+"."-->class
+"#" -->id
+
+id yi 2 yerde kullanamıyoruz kullanırız ama doğru değil
+htmlde yorum satırı yapmak için <!--yorumsatırı--> yapıyorduk
+csste yorum satırı yapmak için /* yorumsatırı */ olarak yapıyoruz
+color picker sitesini kullanrak istediğin farklı renkli bulup kopyalayıp csste kullanabilirisin
+
+Padding (İç Boşluk):
+Bir elementin içeriği ile kenar çizgisi (border) arasında kalan boşluktur.
+Margin (Dış Boşluk):
+Bir elementin dış sınırı ile diğer elementler arasında kalan boşluktur.
+Farkları:
+Padding: Elementin içinde boşluk yaratır.
+Margin: Elementin dışında boşluk yaratır.
+
+DİSPLAY-->
+ Inline (Satır İçi) Elementler:
+Davranış:
+Element, bulunduğu satırın içine yerleşir ve satırın akışını bozmaz. Diğer elementlerle aynı satırı paylaşır.
+width ve height özelliklerini biz belirleyemeyiz.
+Block (Blok) Elementler:
+Davranış:
+Kendi satırına yerleşir ve diğer elementleri altına iter. Sayfa düzenini etkiler.
+width ve heightleri biz belirleyebiliriz
+Inline-block:
+Inline gibi davranır: Yanındaki öğelerle aynı satırda görüntülenir.
+Block gibi davranır: Genişlik (width), yükseklik (height), padding ve margin gibi özellikler uygulanabilir.
+Varsayılan satır kırılması yoktur: Yatay olarak hizalanmış öğeler bir sonraki satıra geçmez.
+
+
+
+
+
+BOOTSTRAP
+---------------------------
+ bg-warning--> Bulunmuş olduğu etkietin arka plan rengini değiştirir
+ Bootstrapte bir satır 12 parçadan oluşur.
+ Hem telefonda hem pcde site uygun görünmesi lazım bu yüzden 
+ -sm yapıyoruz yani aslında containerde bunu ayaralayabiiriz orda istersek md lg falan da yapıyoruz bunlar grid yapılarıdır
+ Alignment --> bölmeleri konumlandırıyor gibi düşüenbiliriz
+ justify-content-...(start,end,center) --> satırda hizalama
+1 rem= 16px
+DOKÜMANI KULLANMAYAI ÖĞRENECEKSİN EZBER YOKKK!!!!!!
+
+mesela radio kullanırken birden fazls seçenek varsa ve seçeneklerden yalnızca birini seçmek istiyorsak
+yazdığımız seçeneklerin name kısmı aynı olmalı
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+script kodlarını genelde body bitişinde kulllan. yukardan aşağı okunduğunu unutma
+harici bir sayfa da olabilir
+
+
+console içine her türde şeyler yazabiliriz
+console temizlemek için de console.clear kullanamıyoruz
+ctrl+ö ile yorum satırı yapıyoruz her şeyi
+
+popup göndermek için alert kullanıyoruz. bilgilendirmek ve 
+uyarmak iin kullanıyoruz
+
+web sayfasının tamamı yani tüm pencere window objesi olarak adlandırılır
+bir de document objesi var. o da window içinde tanımlanmış objesidir.
+
+
+session storage geçicidr. sekmeyyi kapatınca veriler gider0
+local storage ise kapanınca silinmez.
+
+
+SCOPELAR
+-Global scope, en geniş scopetur. Her yerden erişilebilir.
+-Function scope,function metodta tanımlanmış kıvırcık parantezin içinde tanımlamışsak 
+sadece o parantezlerin içinde kullanabiliriz.
+-Block scope, bir değişkenin sadece tanımlandığı süslü parantez {} içindeki blok içinde erişilebilir olmasını ifade eder.
+--Block Scope--                           --Function Scope--
+Sadece {} içindeki blokta geçerli	      Bütün fonksiyon içinde geçerli
+Blok dışına çıkınca kaybolur	          Fonksiyon dışına çıkınca kaybolur
+Döngü, if-else gibi bloklar	              Tüm fonksiyon
+Blok bitince silinir	                  Fonksiyon bitince silinir
+
+VAR-LET-CONST
+jsde değişken tanımlarken var/let/const ile tanımlıyoruz
+(int vs yok)
+ *** var ile tanımlamış olduğumuz her şey function scope olur
+çok erişelebildiği için ramde çok yer kaplıyor
+*let ve const block scope özelliğine sahiptir
+*var ile aynı değişken isminde değişken tanımlayabiliriz
+* ama let ile yaparsak hata verir
+*let ve const arasındaki fark letin değeri sonradan değiştirilebilr
+ama const hep sabit kalır sonradan değiştirmeye izin vermez
+
+Prompt() ile kullanıcadan değer alıyoruz.
+***Kullanıcıdan alınan değerler her zaman string tipindedir tür dönüşümü ile düzeltebiliriz
+
+confirm() ile aslında onaylama olarak düşüenbiliriz
+true ve false döndürecek
+
+
+/*
+    ------------------- TÜR DÖNÜŞÜMLERİ -------------------
+    strings, numbers, booleans, undefined, and null. 
+    object , function
+*/
+
+
+//String veri tipinden number veri tipine dönüştürmek..
+
+
+// let a =5;
+// let b =Number("10");
+// console.log(a+b);
+
+// let c = Number(b);
+// console.log(typeof c);
+// console.log(a+c);
+
+
+//parseInt()
+
+
+// console.log(window);
+
+// let a = 8;
+// let b = parseFloat("12.3");
+// console.log(b);
+// console.log(typeof b);
+
+
+//NUMBER TİPİNDEN STRİNG VERİ TİPİNE DÖNÜŞTÜRMEK
+
+
+// let x = String(55);
+// let x  = (55).toString();
+// console.log(typeof x);
+// console.log(x);
+
+
+// let sonuc = String(true);
+// console.log(typeof sonuc);
+// console.log(sonuc);
+
+
+// let a  = Number("B");
+//Not a Number = Bir sayı değil
+// console.log(a);
+
+
+**TOOLTİP:Açıklama satırı gibi düşüenbiliriz
+popuplar diyebiliriz(direkt entera basamdan bi kullandıklarımızın ne olduğunu incele 
+zaten o şeyin adı tooltip)
+
+***BREAKPOİNT: Kodun adım adım ilerlemesini sağlar hani hızlı değil de bizim de görebileceğimiz hızda adım adım çalıştırır
+debugger kullanarak hangi satırdan adımın başlayacağını belirtiyoruz
+
+
+
+
+

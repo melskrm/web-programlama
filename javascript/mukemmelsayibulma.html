@@ -1,0 +1,22 @@
+//MÜKEMMEL SAYI BULMA UYGULAMASI
+
+function isPerfectNumber(number){
+let toplam =0;
+for(let i=2; i<=number/2;i++)//burada neden number/2 yaptık?
+//Çünkü bir sayının kendisinden önceki en büyük böleni onun iki katıdır
+
+if(number%i==0){
+    toplam+=i;
+}
+toplam+=1+number;
+
+if(toplam==number*2){
+    console.log("mükemmel sayıdır");
+}
+else{
+    console.log("mükemmel sayı değildir");
+}
+
+}
+
+isPerfectNumber(5);

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+     
+     ul{
+        list-style-type: none;
+        background-color: black;
+
+
+     }
+     ul li{
+        display:inline-block;
+        padding: 5px;
+      width: 100px;
+     }
+     ul li:hover{
+        background-color: red;
+        transition: 0.5s;
+     }
+     ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: bold;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #news-content{
+      position: absolute;
+      z-index: 1;
+      display: none;
+      margin-top:5px;
+      margin-left: -6px;
+      
+
+     }
+     .news-li:hover #news-content{
+      display: block;
+     }
+     #news2-content{
+      position: absolute;
+      z-index: 1;
+      margin-left: 105px;
+      margin-top: -28px;
+      display: none;
+     }
+     
+     .news2-li:hover #news2-content{
+      display: block;
+     }
+     
+    
+    </style>
+<body>
+    <ul>
+        <li><a href="ana.jpg"><i class="fa-solid fa-house"></i> HOME</a></li>
+        <li class="news-li">
+
+         <a href="news.jpg"><i class="fa-solid fa-newspaper"></i> NEWS</a>
+          
+          <div id="news-content">
+         <ul>
+            <li style="display: block;"><a href="#">News 1</a></li>
+            <li class="news2-li" style="display: block;"><a href="#">News 2</a>
+               <div id="news2-content">
+                  <ul>
+                     <li><a href="#">Detail 1</a></li>
+                     <li><a href="#">Detail 2</a></li>
+                     <li><a href="#">Detail 3</a></li>
+                     <li><a href="#">Detail 4</a></li>
+
+                  </ul>
+
+               </div>
+            </li>
+            <li style="display: block;"><a href="#">News 3</a></li>
+            <li style="display: block;"><a href="#">News 4</a></li>
+
+         </ul>
+          </div>
+      
+      </li>
+        <li><a href="contact.jpeg"><i class="fa-solid fa-address-card"></i> CONTACT</a></li>
+        <li><a href="about.webp"><i class="fa-solid fa-lightbulb"></i> ABOUT</a></li>
+
+    </ul>
+</body>
+</html>
